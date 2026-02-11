@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serás mía...</title>
+    <style>
+        /* Centramos todo en la pantalla */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f3e5f5;   /* morado clarito */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        /* Contenedor */
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            max-width: 400px;
+        }
+
+        /* Encabezado */
+        h1 {
+            color: #6a1b9a;
+        }
+
+        /* Botones */
+        .btn a {
+            text-decoration: none;
+            color: white;
+            background: #6a1b9a;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 10px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .btn a:hover {
+            background: #4a148c;
+        }
+
+        /* Imagen / GIF */
+        .gif {
+            width: 250px;  /* tamaño fijo */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- GIF directo en vez de script -->
+          <div class="tenor-gif-embed" data-postid="21443416" data-share-method="host" data-aspect-ratio="0.95625" data-width="100%"><a href="https://tenor.com/view/white-cat-cats-hell-yeah-cat-gif-21443416">White Cat Cats GIF</a>from <a href="https://tenor.com/search/white+cat-gifs">White Cat GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <h1>Porfisss jajajaj :p </h1>
+
+        <div class="btn">
+            <a href="si.html">SI</a>
+            <a href="#" id="btn-random">NO</a>
+        </div>
+    </div>
+
+    <!-- Script para que el botón NO se mueva -->
+    <script>
+        const btn = document.getElementById('btn-random');
+        btn.addEventListener('mouseover', () => {
+            const x = Math.floor(Math.random() * (window.innerWidth - 100));
+            const y = Math.floor(Math.random() * (window.innerHeight - 50));
+            btn.style.position = 'absolute';
+            btn.style.left = x + 'px';
+            btn.style.top = y + 'px';
+        });
+    </script>
+</body>
+</html>
